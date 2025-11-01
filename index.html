@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelsey Roberts</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Kelsey Roberts | Data Scientist | Cincinnati, OH</title>
+    <meta name="description" content="Kelsey Roberts is a Data Scientist at Posit PBC in Cincinnati, OH, specializing in R, Shiny, and interactive data applications. View projects and resume.">
+    <meta name="keywords" content="Kelsey Roberts, Data Scientist, Cincinnati, Posit, RStudio, R Shiny, Data Analytics, Sports Analytics, Bird Apps, Ecuador Birds">
+    <meta name="author" content="Kelsey Roberts">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Kelsey Roberts | Data Scientist">
+    <meta property="og:description" content="Data Scientist at Posit PBC specializing in R Shiny applications and interactive data visualization.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kelseyroberts.github.io">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kelsey Roberts | Data Scientist">
+    <meta name="twitter:description" content="Data Scientist at Posit PBC in Cincinnati, OH. R Shiny developer and bird enthusiast.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kelseyroberts.github.io">
+    
     <style>
         * {
             margin: 0;
@@ -131,6 +152,11 @@
             color: #666;
         }
         
+        .location {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2em;
@@ -145,46 +171,88 @@
             }
         }
     </style>
+    
+    <!-- Structured Data (JSON-LD) for better SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kelsey Roberts",
+      "jobTitle": "Data Scientist",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Posit PBC"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cincinnati",
+        "addressRegion": "OH",
+        "addressCountry": "US"
+      },
+      "url": "https://kelseyroberts.github.io",
+      "sameAs": [
+        "https://github.com/kelseyroberts"
+      ],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "University of Arkansas"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Xavier University"
+        }
+      ],
+      "knowsAbout": ["Data Science", "R Programming", "Shiny", "Statistics", "Machine Learning", "Sports Analytics"]
+    }
+    </script>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Kelsey Roberts</h1>
-            <p>Data Scientist | Bird Enthusiast</p>
+            <p>Data Scientist | Cincinnati, OH</p>
+            <p class="location">Posit PBC (formerly RStudio)</p>
         </header>
         
-        <div class="content">
+        <main class="content">
             <section>
                 <h2>About Me</h2>
-                <p>Welcome! I'm Kelsey Roberts, a Data Scientist at Posit PBC with a passion for building interactive R Shiny applications. My background spans sports analytics and data engineering, and I hold an MS in Statistics and Analytics. When I'm not working with data, you'll find me birding—which inspired these apps that merge my technical skills with my love for birds.</p>
+                <p>Welcome! My name is Kelsey Roberts and I'm currently a Data Scientist at Posit PBC (formerly RStudio) in Cincinnati, Ohio. I have a passion for creating interactive data applications using R and Shiny to make complex data accessible and engaging. With a background in sports analytics—having worked with the New York Knicks, Miami HEAT, and Indiana Pacers—I love finding creative ways to visualize and explore data. I hold an MS in Statistics and Analytics from the University of Arkansas. Outside of work, I'm an avid birder, which inspired these projects combining my technical skills with my love for ornithology.</p>
             </section>
             
             <section>
                 <h2>Projects</h2>
                 <div class="projects">
-                    <div class="project-card">
+                    <article class="project-card">
                         <h3>🦜 Ecuador Bird Guide</h3>
-                        <p>An interactive guide to the diverse bird species found in Ecuador.I built this app to help me prepare for my trip to the Amazon and to track the birds I might see.</p>
-                        <a href="https://kelsey-roberts.shinyapps.io/ecuador_bird_guide/" target="_blank" class="btn">Launch App</a>
-                    </div>
+                        <p>An interactive R Shiny application and guide to the diverse bird species found in Ecuador. I built this app to prepare for my birding trip to the Amazon to study the birds and to track the birds I would see.</p>
+                        <a href="https://kelsey-roberts.shinyapps.io/ecuador_bird_guide/" target="_blank" rel="noopener noreferrer" class="btn">Launch App</a>
+                    </article>
                     
-                    <div class="project-card">
+                    <article class="project-card">
                         <h3>🎮 Birding Games</h3>
-                        <p>Test your bird identification skills with fun, interactive games designed for birding enthusiasts of all levels.</p>
-                        <a href="https://kelsey-roberts.shinyapps.io/birding_games/" target="_blank" class="btn">Play Now</a>
-                    </div>
+                        <p>Test your bird identification skills with fun, interactive games built with R Shiny. Designed for birding enthusiasts and ornithology students of all levels.</p>
+                        <a href="https://kelsey-roberts.shinyapps.io/birding_games/" target="_blank" rel="noopener noreferrer" class="btn">Play Now</a>
+                    </article>
                 </div>
             </section>
             
             <section class="resume-section">
                 <h2>Resume</h2>
-                <p>Interested in learning more about my background and experience?</p>
-                <a href="resume.pdf" download class="btn">Download Resume</a>
+                <p>Interested in learning more about my background and experience in data science, R programming, and analytics?</p>
+                <a href="resume.pdf" download class="btn" aria-label="Download Kelsey Roberts Resume PDF">Download Resume (PDF)</a>
             </section>
-        </div>
+            
+            <section>
+                <h2>Connect</h2>
+                <p>Find me on <a href="https://github.com/kelseyroberts" target="_blank" rel="noopener noreferrer">GitHub</a> to see more of my work and projects.</p>
+                <p>Connect with me on <a href="https://www.linkedin.com/in/kelseyroberts1/" target="_blank" rel="noopener noreferrer">Linkedin</a>.</p>
+            </section>
+        </main>
         
         <footer>
-            <p>&copy; 2025 Kelsey Roberts. All rights reserved.</p>
+            <p>&copy; 2025 Kelsey Roberts | Data Scientist | Cincinnati, Ohio</p>
         </footer>
     </div>
 </body>
